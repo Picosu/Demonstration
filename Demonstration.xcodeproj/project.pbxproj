@@ -192,6 +192,7 @@
 				TargetAttributes = {
 					C75FAB2C1BCA6CE6003AC8E4 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 5UMH6EWY8Z;
 					};
 					C75FAB401BCA6CE6003AC8E4 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -398,10 +399,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Demonstration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.max.Demonstration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -409,10 +413,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Demonstration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.max.Demonstration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -483,6 +490,7 @@
 				C75FAB571BCA6CE6003AC8E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C75FAB581BCA6CE6003AC8E4 /* Build configuration list for PBXNativeTarget "DemonstrationTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +499,7 @@
 				C75FAB5A1BCA6CE6003AC8E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C75FAB5B1BCA6CE6003AC8E4 /* Build configuration list for PBXNativeTarget "DemonstrationUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +508,7 @@
 				C75FAB5D1BCA6CE6003AC8E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
