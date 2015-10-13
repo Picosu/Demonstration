@@ -80,7 +80,7 @@
             </objects>
             <point key="canvasLocation" x="251" y="-25"/>
         </scene>
-        <!--Detail CommandeTVC-->
+        <!--Title-->
         <scene sceneID="LBE-RY-y8e">
             <objects>
                 <tableViewController id="U6U-jZ-bT7" customClass="DetailCommandeTVC" customModule="Demonstration" customModuleProvider="target" sceneMemberID="viewController">
@@ -90,11 +90,11 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="commandeCellIdentifier" editingAccessoryType="disclosureIndicator" textLabel="97L-77-iYs" detailTextLabel="n7l-wb-tZr" style="IBUITableViewCellStyleValue1" id="vmh-UL-2gk">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="commandeCellIdentifier" textLabel="97L-77-iYs" detailTextLabel="n7l-wb-tZr" style="IBUITableViewCellStyleValue1" id="vmh-UL-2gk">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vmh-UL-2gk" id="sUi-wu-Nnx">
-                                    <rect key="frame" x="0.0" y="0.0" width="533" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="97L-77-iYs">
@@ -106,7 +106,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="n7l-wb-tZr">
-                                            <rect key="frame" x="491.5" y="12" width="41.5" height="19.5"/>
+                                            <rect key="frame" x="543.5" y="12" width="41.5" height="19.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -124,10 +124,19 @@
                             <outlet property="delegate" destination="U6U-jZ-bT7" id="hjM-tn-Gpt"/>
                         </connections>
                     </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Title" id="WZh-An-VBG">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="Pe8-qs-VVM">
+                            <connections>
+                                <action selector="displayTotal:" destination="U6U-jZ-bT7" id="q5b-ZR-WaN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jo6-m7-VVe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1071" y="-25"/>
+            <point key="canvasLocation" x="1445" y="-14"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="swe-OG-7on">

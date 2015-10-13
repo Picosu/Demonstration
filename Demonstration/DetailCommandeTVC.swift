@@ -11,6 +11,7 @@ import UIKit
 
 class DetailCommandeTVC : UITableViewController {
     var items = [String]()
+    var total = 0
     
     override func viewDidLoad() {
         items = ["Vodka","Jäger"]
@@ -22,12 +23,20 @@ class DetailCommandeTVC : UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("commandeCellIdentifier") as UITableViewCell!
         cell.textLabel!.text = items[indexPath.row]
-        let randomNumer = random() % 10
-        cell?.detailTextLabel!.text = "\(randomNumer)€";
+        let randomNumber = random() % 10
+        total = total + randomNumber
+        cell?.detailTextLabel!.text = "\(randomNumber)€";
         
         return cell
     }
     
+    @IBAction func displayTotal(sender: AnyObject) {
+        if sender.isKindOfClass(UIBarButtonItem) {
+            let alert = UIAlertController(title: "Total", message: "Voulez vous règler l'addition de \(total)€ ?", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+    }
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         return true
     }
