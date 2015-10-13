@@ -32,6 +32,12 @@ class TableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return users.count
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "detailCommandeView" {
+            segue.destinationViewController
+        }
+    }
 }
 
 class CommandeCell: UITableViewCell {
