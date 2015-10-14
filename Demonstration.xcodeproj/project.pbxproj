@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		23099C4A1BCD23B400FBA397 /* DetailCommandeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23099C491BCD23B400FBA397 /* DetailCommandeTVC.swift */; settings = {ASSET_TAGS = (); }; };
+		236E2CB91BCE5748001294FF /* CocktailSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236E2CB81BCE5748001294FF /* CocktailSelectionVC.swift */; settings = {ASSET_TAGS = (); }; };
 		C75FAB311BCA6CE6003AC8E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75FAB301BCA6CE6003AC8E4 /* AppDelegate.swift */; };
 		C75FAB331BCA6CE6003AC8E4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75FAB321BCA6CE6003AC8E4 /* TableViewController.swift */; };
 		C75FAB361BCA6CE6003AC8E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C75FAB341BCA6CE6003AC8E4 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		23099C491BCD23B400FBA397 /* DetailCommandeTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCommandeTVC.swift; sourceTree = "<group>"; };
+		236E2CB81BCE5748001294FF /* CocktailSelectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CocktailSelectionVC.swift; sourceTree = "<group>"; };
 		C75FAB2D1BCA6CE6003AC8E4 /* Demonstration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demonstration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C75FAB301BCA6CE6003AC8E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C75FAB321BCA6CE6003AC8E4 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				C75FAB321BCA6CE6003AC8E4 /* TableViewController.swift */,
 				23099C491BCD23B400FBA397 /* DetailCommandeTVC.swift */,
 				C75FAB341BCA6CE6003AC8E4 /* Main.storyboard */,
+				236E2CB81BCE5748001294FF /* CocktailSelectionVC.swift */,
 				C75FAB371BCA6CE6003AC8E4 /* Assets.xcassets */,
 				C75FAB391BCA6CE6003AC8E4 /* LaunchScreen.storyboard */,
 				C75FAB3C1BCA6CE6003AC8E4 /* Info.plist */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C75FAB331BCA6CE6003AC8E4 /* TableViewController.swift in Sources */,
+				236E2CB91BCE5748001294FF /* CocktailSelectionVC.swift in Sources */,
 				23099C4A1BCD23B400FBA397 /* DetailCommandeTVC.swift in Sources */,
 				C75FAB311BCA6CE6003AC8E4 /* AppDelegate.swift in Sources */,
 			);

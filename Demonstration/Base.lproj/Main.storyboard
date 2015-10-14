@@ -4,6 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
         <!--Root View Controller-->
@@ -80,6 +81,377 @@
             </objects>
             <point key="canvasLocation" x="251" y="-25"/>
         </scene>
+        <!--Item 2-->
+        <scene sceneID="EHn-xU-wkI">
+            <objects>
+                <viewController id="uoR-iH-kaH" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pxL-kP-A3f"/>
+                        <viewControllerLayoutGuide type="bottom" id="rDf-Pz-rMZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LgC-33-CtG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="kAj-bu-O6l"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EO6-rD-Nq2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1136" y="-1080"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="t0e-fu-ZoD">
+            <objects>
+                <viewController id="ndr-qQ-qaQ" customClass="CocktailSelectionVC" customModule="Demonstration" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DNl-Pm-X3a"/>
+                        <viewControllerLayoutGuide type="bottom" id="nfk-R9-lIQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FzZ-i3-LTS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0e-nP-FhH">
+                                <rect key="frame" x="28" y="72" width="102.5" height="88"/>
+                                <animations/>
+                                <state key="normal" image="Cocktail"/>
+                                <connections>
+                                    <action selector="addDrink:" destination="ndr-qQ-qaQ" eventType="touchUpInside" id="G0M-Tw-fBj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I4V-gO-lit">
+                                <rect key="frame" x="138.5" y="72" width="102.5" height="88"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="Cocktail"/>
+                                <connections>
+                                    <action selector="addDrink:" destination="ndr-qQ-qaQ" eventType="touchUpInside" id="l4P-lo-XQZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejf-R6-SFF">
+                                <rect key="frame" x="249" y="72" width="102" height="88"/>
+                                <animations/>
+                                <state key="normal" image="Cocktail"/>
+                                <connections>
+                                    <action selector="addDrink:" destination="ndr-qQ-qaQ" eventType="touchUpInside" id="9Hk-HC-Kxd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aae-uI-93i">
+                                <rect key="frame" x="359" y="72" width="102.5" height="88"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="Cocktail"/>
+                                <connections>
+                                    <action selector="addDrink:" destination="ndr-qQ-qaQ" eventType="touchUpInside" id="Ljo-ce-2Un"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muT-12-RjF">
+                                <rect key="frame" x="469.5" y="72" width="102.5" height="88"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="Cocktail"/>
+                                <connections>
+                                    <action selector="addDrink:" destination="ndr-qQ-qaQ" eventType="touchUpInside" id="6TF-O4-bYN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9i-vf-W2C">
+                                <rect key="frame" x="28" y="168" width="102.5" height="87.5"/>
+                                <animations/>
+                                <state key="normal" image="Cocktail"/>
+                                <connections>
+                                    <action selector="addDrink:" destination="ndr-qQ-qaQ" eventType="touchUpInside" id="nFQ-b8-uUp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceu-Hd-5gP">
+                                <rect key="frame" x="138.5" y="168" width="102.5" height="87.5"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="Cocktail"/>
+                                <connections>
+                                    <action selector="addDrink:" destination="ndr-qQ-qaQ" eventType="touchUpInside" id="1XC-0Y-Uh7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nto-ih-h5M">
+                                <rect key="frame" x="249" y="168" width="102" height="87.5"/>
+                                <animations/>
+                                <state key="normal" image="Cocktail"/>
+                                <connections>
+                                    <action selector="addDrink:" destination="ndr-qQ-qaQ" eventType="touchUpInside" id="NDx-hl-KS2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYl-Yk-5rs">
+                                <rect key="frame" x="359" y="168" width="102.5" height="87.5"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="Cocktail"/>
+                                <connections>
+                                    <action selector="addDrink:" destination="ndr-qQ-qaQ" eventType="touchUpInside" id="TJX-I5-wGn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JVC-hw-2QH">
+                                <rect key="frame" x="469.5" y="168" width="102.5" height="87.5"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="Cocktail"/>
+                                <connections>
+                                    <action selector="addDrink:" destination="ndr-qQ-qaQ" eventType="touchUpInside" id="We6-KY-wnZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYn-h0-wCn">
+                                <rect key="frame" x="28" y="263.5" width="102.5" height="88"/>
+                                <animations/>
+                                <state key="normal" image="Cocktail"/>
+                                <connections>
+                                    <action selector="addDrink:" destination="ndr-qQ-qaQ" eventType="touchUpInside" id="7rN-7Q-rik"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDB-C9-atr">
+                                <rect key="frame" x="138.5" y="263.5" width="102.5" height="88"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="Cocktail"/>
+                                <connections>
+                                    <action selector="addDrink:" destination="ndr-qQ-qaQ" eventType="touchUpInside" id="8DS-YG-amA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVw-Vn-rdv">
+                                <rect key="frame" x="249" y="263.5" width="102" height="88"/>
+                                <animations/>
+                                <state key="normal" image="Cocktail"/>
+                                <connections>
+                                    <action selector="addDrink:" destination="ndr-qQ-qaQ" eventType="touchUpInside" id="qPA-mg-guE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Kc-q2-g6z">
+                                <rect key="frame" x="359" y="263.5" width="102.5" height="88"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="Cocktail"/>
+                                <connections>
+                                    <action selector="addDrink:" destination="ndr-qQ-qaQ" eventType="touchUpInside" id="9pt-yK-qOw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mb-OI-bVp">
+                                <rect key="frame" x="469.5" y="263.5" width="102.5" height="88"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="Cocktail"/>
+                                <connections>
+                                    <action selector="addDrink:" destination="ndr-qQ-qaQ" eventType="touchUpInside" id="Ie9-sy-mci"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPf-oT-m6d">
+                                <rect key="frame" x="28" y="359.5" width="102.5" height="87.5"/>
+                                <animations/>
+                                <state key="normal" image="Cocktail"/>
+                                <connections>
+                                    <action selector="addDrink:" destination="ndr-qQ-qaQ" eventType="touchUpInside" id="soJ-er-FbI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TtZ-Ax-3jQ">
+                                <rect key="frame" x="138.5" y="359.5" width="102.5" height="87.5"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="Cocktail"/>
+                                <connections>
+                                    <action selector="addDrink:" destination="ndr-qQ-qaQ" eventType="touchUpInside" id="KEg-Vm-xdU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHh-Lb-6ES">
+                                <rect key="frame" x="249" y="359.5" width="102" height="87.5"/>
+                                <animations/>
+                                <state key="normal" image="Cocktail"/>
+                                <connections>
+                                    <action selector="addDrink:" destination="ndr-qQ-qaQ" eventType="touchUpInside" id="ylu-gA-tDe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLe-ev-7ad">
+                                <rect key="frame" x="359" y="359.5" width="102.5" height="87.5"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="Cocktail"/>
+                                <connections>
+                                    <action selector="addDrink:" destination="ndr-qQ-qaQ" eventType="touchUpInside" id="Lyh-Bm-Y5L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XnJ-hZ-zIf">
+                                <rect key="frame" x="469.5" y="359.5" width="102.5" height="87.5"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="Cocktail"/>
+                                <connections>
+                                    <action selector="addDrink:" destination="ndr-qQ-qaQ" eventType="touchUpInside" id="d3N-X2-eHw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePg-Ma-ETA">
+                                <rect key="frame" x="28" y="455" width="102.5" height="88"/>
+                                <animations/>
+                                <state key="normal" image="Cocktail"/>
+                                <connections>
+                                    <action selector="addDrink:" destination="ndr-qQ-qaQ" eventType="touchUpInside" id="RhY-8D-cYK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Abs-66-Bjn">
+                                <rect key="frame" x="138.5" y="455" width="102.5" height="88"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="Cocktail"/>
+                                <connections>
+                                    <action selector="addDrink:" destination="ndr-qQ-qaQ" eventType="touchUpInside" id="A5j-oz-THg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqF-gs-0xA">
+                                <rect key="frame" x="249" y="455" width="102" height="88"/>
+                                <animations/>
+                                <state key="normal" image="Cocktail"/>
+                                <connections>
+                                    <action selector="addDrink:" destination="ndr-qQ-qaQ" eventType="touchUpInside" id="hCz-8l-5a6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4i-gW-bub">
+                                <rect key="frame" x="359" y="455" width="102.5" height="88"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="Cocktail"/>
+                                <connections>
+                                    <action selector="addDrink:" destination="ndr-qQ-qaQ" eventType="touchUpInside" id="4hY-KF-vG8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vln-XY-edy">
+                                <rect key="frame" x="469.5" y="455" width="102.5" height="88"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="Cocktail"/>
+                                <connections>
+                                    <action selector="addDrink:" destination="ndr-qQ-qaQ" eventType="touchUpInside" id="hQI-d1-2k0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="T0e-nP-FhH" firstAttribute="leading" secondItem="FzZ-i3-LTS" secondAttribute="leadingMargin" constant="8" id="0KF-d1-tZ5"/>
+                            <constraint firstItem="ePg-Ma-ETA" firstAttribute="top" secondItem="EPf-oT-m6d" secondAttribute="bottom" constant="8" id="0Zu-9A-FYb"/>
+                            <constraint firstItem="aae-uI-93i" firstAttribute="height" secondItem="T0e-nP-FhH" secondAttribute="height" id="0bk-V4-8Y5"/>
+                            <constraint firstItem="aLe-ev-7ad" firstAttribute="top" secondItem="6Kc-q2-g6z" secondAttribute="bottom" constant="8" id="0gB-9R-7dE"/>
+                            <constraint firstItem="bDB-C9-atr" firstAttribute="leading" secondItem="qYn-h0-wCn" secondAttribute="trailing" constant="8" id="11a-hP-VuP"/>
+                            <constraint firstItem="MYl-Yk-5rs" firstAttribute="width" secondItem="T0e-nP-FhH" secondAttribute="width" id="194-8d-GBQ"/>
+                            <constraint firstItem="t9i-vf-W2C" firstAttribute="width" secondItem="T0e-nP-FhH" secondAttribute="width" id="1Da-Pe-ybb"/>
+                            <constraint firstItem="I4V-gO-lit" firstAttribute="height" secondItem="T0e-nP-FhH" secondAttribute="height" id="1Rl-v1-B0X"/>
+                            <constraint firstItem="ejf-R6-SFF" firstAttribute="leading" secondItem="I4V-gO-lit" secondAttribute="trailing" constant="8" id="1Uh-IM-DkZ"/>
+                            <constraint firstItem="ePg-Ma-ETA" firstAttribute="height" secondItem="T0e-nP-FhH" secondAttribute="height" id="2PH-Ap-1cw"/>
+                            <constraint firstItem="nfk-R9-lIQ" firstAttribute="top" secondItem="Abs-66-Bjn" secondAttribute="bottom" constant="8" id="4X8-S5-Zwi"/>
+                            <constraint firstItem="muT-12-RjF" firstAttribute="width" secondItem="T0e-nP-FhH" secondAttribute="width" id="4d8-jQ-mb5"/>
+                            <constraint firstItem="ceu-Hd-5gP" firstAttribute="top" secondItem="I4V-gO-lit" secondAttribute="bottom" constant="8" id="4kg-pW-5zS"/>
+                            <constraint firstItem="nfk-R9-lIQ" firstAttribute="top" secondItem="C4i-gW-bub" secondAttribute="bottom" constant="8" id="51W-o6-0AY"/>
+                            <constraint firstItem="6mb-OI-bVp" firstAttribute="height" secondItem="T0e-nP-FhH" secondAttribute="height" id="5Bn-ru-ZmN"/>
+                            <constraint firstItem="C4i-gW-bub" firstAttribute="height" secondItem="T0e-nP-FhH" secondAttribute="height" id="5E9-qR-w3w"/>
+                            <constraint firstItem="ePg-Ma-ETA" firstAttribute="leading" secondItem="FzZ-i3-LTS" secondAttribute="leadingMargin" constant="8" id="5MD-Sz-dDs"/>
+                            <constraint firstItem="qYn-h0-wCn" firstAttribute="top" secondItem="t9i-vf-W2C" secondAttribute="bottom" constant="8" id="6SH-Pe-sVa"/>
+                            <constraint firstItem="T0e-nP-FhH" firstAttribute="top" secondItem="DNl-Pm-X3a" secondAttribute="bottom" constant="8" id="7Vs-65-t0m"/>
+                            <constraint firstItem="xVw-Vn-rdv" firstAttribute="leading" secondItem="bDB-C9-atr" secondAttribute="trailing" constant="8" id="8HT-Ne-ek9"/>
+                            <constraint firstItem="Nto-ih-h5M" firstAttribute="height" secondItem="T0e-nP-FhH" secondAttribute="height" id="A7v-Tr-ySs"/>
+                            <constraint firstItem="EPf-oT-m6d" firstAttribute="height" secondItem="T0e-nP-FhH" secondAttribute="height" id="AjW-oi-N6m"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vln-XY-edy" secondAttribute="trailing" constant="8" id="Anu-6S-Dcy"/>
+                            <constraint firstItem="JVC-hw-2QH" firstAttribute="top" secondItem="muT-12-RjF" secondAttribute="bottom" constant="8" id="BPq-c7-UOR"/>
+                            <constraint firstItem="t9i-vf-W2C" firstAttribute="height" secondItem="T0e-nP-FhH" secondAttribute="height" id="C9C-ao-PUt"/>
+                            <constraint firstItem="C4i-gW-bub" firstAttribute="top" secondItem="aLe-ev-7ad" secondAttribute="bottom" constant="8" id="D6W-rR-EsT"/>
+                            <constraint firstItem="tHh-Lb-6ES" firstAttribute="height" secondItem="T0e-nP-FhH" secondAttribute="height" id="GMx-2H-iyc"/>
+                            <constraint firstItem="vln-XY-edy" firstAttribute="top" secondItem="XnJ-hZ-zIf" secondAttribute="bottom" constant="8" id="H41-C7-RU4"/>
+                            <constraint firstItem="TtZ-Ax-3jQ" firstAttribute="top" secondItem="bDB-C9-atr" secondAttribute="bottom" constant="8" id="HFb-8R-TrY"/>
+                            <constraint firstItem="xVw-Vn-rdv" firstAttribute="height" secondItem="T0e-nP-FhH" secondAttribute="height" id="HOx-Ge-KVH"/>
+                            <constraint firstItem="muT-12-RjF" firstAttribute="leading" secondItem="aae-uI-93i" secondAttribute="trailing" constant="8" id="IFW-iY-Qbm"/>
+                            <constraint firstItem="JVC-hw-2QH" firstAttribute="width" secondItem="T0e-nP-FhH" secondAttribute="width" id="IVG-3u-KYg"/>
+                            <constraint firstItem="ejf-R6-SFF" firstAttribute="width" secondItem="T0e-nP-FhH" secondAttribute="width" id="Ia8-xF-AXq"/>
+                            <constraint firstItem="lqF-gs-0xA" firstAttribute="height" secondItem="T0e-nP-FhH" secondAttribute="height" id="JSL-1k-Slg"/>
+                            <constraint firstItem="XnJ-hZ-zIf" firstAttribute="leading" secondItem="aLe-ev-7ad" secondAttribute="trailing" constant="8" id="JzD-Re-DRe"/>
+                            <constraint firstItem="nfk-R9-lIQ" firstAttribute="top" secondItem="vln-XY-edy" secondAttribute="bottom" constant="8" id="LXB-2H-24t"/>
+                            <constraint firstItem="C4i-gW-bub" firstAttribute="width" secondItem="T0e-nP-FhH" secondAttribute="width" id="M1X-9z-Ym4"/>
+                            <constraint firstItem="MYl-Yk-5rs" firstAttribute="height" secondItem="T0e-nP-FhH" secondAttribute="height" id="McO-v7-tYd"/>
+                            <constraint firstItem="aLe-ev-7ad" firstAttribute="height" secondItem="T0e-nP-FhH" secondAttribute="height" id="MoB-C0-1Zo"/>
+                            <constraint firstItem="MYl-Yk-5rs" firstAttribute="top" secondItem="aae-uI-93i" secondAttribute="bottom" constant="8" id="NU7-aW-E2U"/>
+                            <constraint firstItem="JVC-hw-2QH" firstAttribute="leading" secondItem="MYl-Yk-5rs" secondAttribute="trailing" constant="8" id="PMQ-3O-1ng"/>
+                            <constraint firstItem="muT-12-RjF" firstAttribute="top" secondItem="DNl-Pm-X3a" secondAttribute="bottom" constant="8" id="POH-DW-6qN"/>
+                            <constraint firstItem="xVw-Vn-rdv" firstAttribute="top" secondItem="Nto-ih-h5M" secondAttribute="bottom" constant="8" id="Ppv-9I-zcN"/>
+                            <constraint firstItem="I4V-gO-lit" firstAttribute="leading" secondItem="T0e-nP-FhH" secondAttribute="trailing" constant="8" id="QNw-zu-L2F"/>
+                            <constraint firstItem="xVw-Vn-rdv" firstAttribute="width" secondItem="T0e-nP-FhH" secondAttribute="width" id="Qpr-eC-Kqr"/>
+                            <constraint firstItem="6mb-OI-bVp" firstAttribute="width" secondItem="T0e-nP-FhH" secondAttribute="width" id="Qs4-ih-Z0U"/>
+                            <constraint firstItem="Abs-66-Bjn" firstAttribute="leading" secondItem="ePg-Ma-ETA" secondAttribute="trailing" constant="8" id="R9w-m5-1Mq"/>
+                            <constraint firstItem="nfk-R9-lIQ" firstAttribute="top" secondItem="ePg-Ma-ETA" secondAttribute="bottom" constant="8" id="Rnd-Wu-sD2"/>
+                            <constraint firstItem="XnJ-hZ-zIf" firstAttribute="width" secondItem="T0e-nP-FhH" secondAttribute="width" id="S2O-q5-3sX"/>
+                            <constraint firstItem="muT-12-RjF" firstAttribute="height" secondItem="T0e-nP-FhH" secondAttribute="height" id="SBU-gB-fSO"/>
+                            <constraint firstItem="6Kc-q2-g6z" firstAttribute="top" secondItem="MYl-Yk-5rs" secondAttribute="bottom" constant="8" id="SM8-TE-29R"/>
+                            <constraint firstItem="vln-XY-edy" firstAttribute="width" secondItem="T0e-nP-FhH" secondAttribute="width" id="SMF-XW-cFd"/>
+                            <constraint firstItem="6mb-OI-bVp" firstAttribute="leading" secondItem="6Kc-q2-g6z" secondAttribute="trailing" constant="8" id="Sd8-hk-74l"/>
+                            <constraint firstItem="XnJ-hZ-zIf" firstAttribute="height" secondItem="T0e-nP-FhH" secondAttribute="height" id="TG7-Hc-R1M"/>
+                            <constraint firstItem="Abs-66-Bjn" firstAttribute="width" secondItem="T0e-nP-FhH" secondAttribute="width" id="TW3-dV-ODB"/>
+                            <constraint firstItem="vln-XY-edy" firstAttribute="height" secondItem="T0e-nP-FhH" secondAttribute="height" id="UwZ-UE-Vpc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="muT-12-RjF" secondAttribute="trailing" constant="8" id="W1S-xO-Jdh"/>
+                            <constraint firstItem="ceu-Hd-5gP" firstAttribute="height" secondItem="T0e-nP-FhH" secondAttribute="height" id="WBf-F1-YzV"/>
+                            <constraint firstItem="ejf-R6-SFF" firstAttribute="height" secondItem="T0e-nP-FhH" secondAttribute="height" id="WDW-kQ-FDR"/>
+                            <constraint firstItem="TtZ-Ax-3jQ" firstAttribute="leading" secondItem="EPf-oT-m6d" secondAttribute="trailing" constant="8" id="Wyp-aw-Qvu"/>
+                            <constraint firstItem="ceu-Hd-5gP" firstAttribute="width" secondItem="T0e-nP-FhH" secondAttribute="width" id="XgU-Pp-7aV"/>
+                            <constraint firstItem="Abs-66-Bjn" firstAttribute="top" secondItem="TtZ-Ax-3jQ" secondAttribute="bottom" constant="8" id="YPr-JE-HY5"/>
+                            <constraint firstItem="bDB-C9-atr" firstAttribute="top" secondItem="ceu-Hd-5gP" secondAttribute="bottom" constant="8" id="YfF-oM-guB"/>
+                            <constraint firstItem="JVC-hw-2QH" firstAttribute="height" secondItem="T0e-nP-FhH" secondAttribute="height" id="Z2y-p9-SU0"/>
+                            <constraint firstItem="nfk-R9-lIQ" firstAttribute="top" secondItem="lqF-gs-0xA" secondAttribute="bottom" constant="8" id="ZJF-JO-wyX"/>
+                            <constraint firstItem="EPf-oT-m6d" firstAttribute="top" secondItem="qYn-h0-wCn" secondAttribute="bottom" constant="8" id="ZMN-0p-J1W"/>
+                            <constraint firstItem="Abs-66-Bjn" firstAttribute="height" secondItem="T0e-nP-FhH" secondAttribute="height" id="ZrT-nS-ZNR"/>
+                            <constraint firstItem="TtZ-Ax-3jQ" firstAttribute="width" secondItem="T0e-nP-FhH" secondAttribute="width" id="bDd-gi-6bQ"/>
+                            <constraint firstItem="I4V-gO-lit" firstAttribute="top" secondItem="DNl-Pm-X3a" secondAttribute="bottom" constant="8" id="baV-KL-ULg"/>
+                            <constraint firstItem="Nto-ih-h5M" firstAttribute="top" secondItem="ejf-R6-SFF" secondAttribute="bottom" constant="8" id="bge-dt-NF0"/>
+                            <constraint firstItem="6Kc-q2-g6z" firstAttribute="height" secondItem="T0e-nP-FhH" secondAttribute="height" id="boe-9h-zd3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JVC-hw-2QH" secondAttribute="trailing" constant="8" id="bt8-0U-MXG"/>
+                            <constraint firstItem="vln-XY-edy" firstAttribute="leading" secondItem="C4i-gW-bub" secondAttribute="trailing" constant="8" id="cEe-Ot-o1O"/>
+                            <constraint firstItem="XnJ-hZ-zIf" firstAttribute="top" secondItem="6mb-OI-bVp" secondAttribute="bottom" constant="8" id="cN9-sM-iQd"/>
+                            <constraint firstItem="ePg-Ma-ETA" firstAttribute="width" secondItem="T0e-nP-FhH" secondAttribute="width" id="cYD-8K-JXp"/>
+                            <constraint firstItem="MYl-Yk-5rs" firstAttribute="leading" secondItem="Nto-ih-h5M" secondAttribute="trailing" constant="8" id="cci-oy-qN8"/>
+                            <constraint firstItem="qYn-h0-wCn" firstAttribute="leading" secondItem="FzZ-i3-LTS" secondAttribute="leadingMargin" constant="8" id="dNj-1g-18g"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6mb-OI-bVp" secondAttribute="trailing" constant="8" id="dOM-fE-U25"/>
+                            <constraint firstItem="EPf-oT-m6d" firstAttribute="width" secondItem="T0e-nP-FhH" secondAttribute="width" id="drQ-eR-aK2"/>
+                            <constraint firstItem="C4i-gW-bub" firstAttribute="leading" secondItem="lqF-gs-0xA" secondAttribute="trailing" constant="8" id="e2L-8p-fRZ"/>
+                            <constraint firstItem="aae-uI-93i" firstAttribute="leading" secondItem="ejf-R6-SFF" secondAttribute="trailing" constant="8" id="eFI-W7-oXy"/>
+                            <constraint firstItem="aae-uI-93i" firstAttribute="top" secondItem="DNl-Pm-X3a" secondAttribute="bottom" constant="8" id="eFo-3C-hh5"/>
+                            <constraint firstItem="I4V-gO-lit" firstAttribute="width" secondItem="T0e-nP-FhH" secondAttribute="width" id="gAb-xD-xLv"/>
+                            <constraint firstItem="t9i-vf-W2C" firstAttribute="leading" secondItem="FzZ-i3-LTS" secondAttribute="leadingMargin" constant="8" id="gau-2d-1J2"/>
+                            <constraint firstItem="Nto-ih-h5M" firstAttribute="width" secondItem="T0e-nP-FhH" secondAttribute="width" id="gfn-IO-6ci"/>
+                            <constraint firstItem="aLe-ev-7ad" firstAttribute="width" secondItem="T0e-nP-FhH" secondAttribute="width" id="gmg-gr-hj2"/>
+                            <constraint firstItem="Nto-ih-h5M" firstAttribute="leading" secondItem="ceu-Hd-5gP" secondAttribute="trailing" constant="8" id="jCr-no-K7L"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XnJ-hZ-zIf" secondAttribute="trailing" constant="8" id="jmb-Xw-Acf"/>
+                            <constraint firstItem="TtZ-Ax-3jQ" firstAttribute="height" secondItem="T0e-nP-FhH" secondAttribute="height" id="jyC-X3-mGH"/>
+                            <constraint firstItem="EPf-oT-m6d" firstAttribute="leading" secondItem="FzZ-i3-LTS" secondAttribute="leadingMargin" constant="8" id="jzO-5y-gMD"/>
+                            <constraint firstItem="lqF-gs-0xA" firstAttribute="width" secondItem="T0e-nP-FhH" secondAttribute="width" id="kON-Fg-lAf"/>
+                            <constraint firstItem="ceu-Hd-5gP" firstAttribute="leading" secondItem="t9i-vf-W2C" secondAttribute="trailing" constant="8" id="kzT-Mh-OmN"/>
+                            <constraint firstItem="qYn-h0-wCn" firstAttribute="height" secondItem="T0e-nP-FhH" secondAttribute="height" id="lRg-Fc-M3F"/>
+                            <constraint firstItem="bDB-C9-atr" firstAttribute="height" secondItem="T0e-nP-FhH" secondAttribute="height" id="lTi-O9-fI4"/>
+                            <constraint firstItem="aae-uI-93i" firstAttribute="width" secondItem="T0e-nP-FhH" secondAttribute="width" id="mQE-gi-4Vk"/>
+                            <constraint firstItem="ejf-R6-SFF" firstAttribute="top" secondItem="DNl-Pm-X3a" secondAttribute="bottom" constant="8" id="me3-4l-t5z"/>
+                            <constraint firstItem="t9i-vf-W2C" firstAttribute="top" secondItem="T0e-nP-FhH" secondAttribute="bottom" constant="8" id="mu1-dy-Pms"/>
+                            <constraint firstItem="aLe-ev-7ad" firstAttribute="leading" secondItem="tHh-Lb-6ES" secondAttribute="trailing" constant="8" id="p9w-rI-vck"/>
+                            <constraint firstItem="6Kc-q2-g6z" firstAttribute="leading" secondItem="xVw-Vn-rdv" secondAttribute="trailing" constant="8" id="q0q-3p-PW1"/>
+                            <constraint firstItem="lqF-gs-0xA" firstAttribute="top" secondItem="tHh-Lb-6ES" secondAttribute="bottom" constant="8" id="qeK-hk-ASl"/>
+                            <constraint firstItem="6Kc-q2-g6z" firstAttribute="width" secondItem="T0e-nP-FhH" secondAttribute="width" id="s2r-2i-pZk"/>
+                            <constraint firstItem="tHh-Lb-6ES" firstAttribute="leading" secondItem="TtZ-Ax-3jQ" secondAttribute="trailing" constant="8" id="tKI-0E-OHL"/>
+                            <constraint firstItem="qYn-h0-wCn" firstAttribute="width" secondItem="T0e-nP-FhH" secondAttribute="width" id="uxk-DE-JNi"/>
+                            <constraint firstItem="tHh-Lb-6ES" firstAttribute="width" secondItem="T0e-nP-FhH" secondAttribute="width" id="vtN-Qr-m4g"/>
+                            <constraint firstItem="tHh-Lb-6ES" firstAttribute="top" secondItem="xVw-Vn-rdv" secondAttribute="bottom" constant="8" id="xeK-w2-8l4"/>
+                            <constraint firstItem="lqF-gs-0xA" firstAttribute="leading" secondItem="Abs-66-Bjn" secondAttribute="trailing" constant="8" id="yE8-yr-7Zg"/>
+                            <constraint firstItem="6mb-OI-bVp" firstAttribute="top" secondItem="JVC-hw-2QH" secondAttribute="bottom" constant="8" id="zCG-0d-I8l"/>
+                            <constraint firstItem="bDB-C9-atr" firstAttribute="width" secondItem="T0e-nP-FhH" secondAttribute="width" id="zXi-vn-KaN"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="bxR-TZ-lec"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gOy-wm-Jdx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1136" y="-1741"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="BaL-Up-cXj">
+            <objects>
+                <tabBarController id="YiN-Uc-5Qz" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="2sF-B7-DJR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ndr-qQ-qaQ" kind="relationship" relationship="viewControllers" id="Juv-qJ-ykM"/>
+                        <segue destination="uoR-iH-kaH" kind="relationship" relationship="viewControllers" id="8hA-4A-YLz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mR5-wL-2aJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="321" y="-1080"/>
+        </scene>
         <!--Title-->
         <scene sceneID="LBE-RY-y8e">
             <objects>
@@ -126,17 +498,24 @@
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Title" id="WZh-An-VBG">
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="Pe8-qs-VVM">
-                            <connections>
-                                <action selector="displayTotal:" destination="U6U-jZ-bT7" id="q5b-ZR-WaN"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="Z8c-bg-aBF">
+                                <connections>
+                                    <segue destination="YiN-Uc-5Qz" kind="show" id="BiM-Lm-cN9"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem style="done" systemItem="done" id="Pe8-qs-VVM">
+                                <connections>
+                                    <action selector="displayTotal:" destination="U6U-jZ-bT7" id="q5b-ZR-WaN"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jo6-m7-VVe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1445" y="-14"/>
+            <point key="canvasLocation" x="999" y="-25"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="swe-OG-7on">
@@ -158,5 +537,6 @@
     </scenes>
     <resources>
         <image name="Avatar" width="180" height="180"/>
+        <image name="Cocktail" width="256" height="256"/>
     </resources>
 </document>
