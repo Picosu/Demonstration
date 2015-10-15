@@ -13,15 +13,26 @@ class CocktailSelectionVC : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        for var view in self.view.subviews {
-//            if view.isKindOfClass(UIButton)
-//            {
-//                view.layer.cornerRadius = view.frame.size.width/2
-//                view.layer.borderWidth = 1
-//            }
-//        }
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        for view in self.view.subviews {
+            if view.isKindOfClass(UIButton)
+            {
+                view.layer.cornerRadius = view.frame.size.width/2
+                view.layer.borderWidth = 1
+                
+            }
+        }
+    }
+    
     @IBAction func addDrink(sender: UIButton) {
+        let alert = UIAlertController(title: "Ajout", message: "Voulez vous vraiment prendre un cocktail?", preferredStyle: .ActionSheet)
+        alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Annuler", style: .Cancel, handler: nil))
+        
+        self.presentViewController(alert, animated: true, completion: nil)
     }
 }
