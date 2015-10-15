@@ -18,12 +18,15 @@ class CocktailSelectionVC : UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
+        self.view.layoutSubviews()
+        
         for view in self.view.subviews {
             if view.isKindOfClass(UIButton)
             {
-                view.layer.cornerRadius = view.frame.size.width/2
+                view.layer.cornerRadius = view.frame.size.width/2 - 2
                 view.layer.borderWidth = 1
-                
+                view.backgroundColor = UIColor(white: 1, alpha: 1)
+                view.layer.masksToBounds = true
             }
         }
     }
